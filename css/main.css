@@ -154,9 +154,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    align-items: center;
     z-index: 5000;
     background-color: #B28451;
   }
@@ -254,6 +252,11 @@ body {
   align-self: center;
 }
 @media only screen and (min-width: 75em) {
+  .mobile-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 75em) {
   .mobile-nav {
     display: none;
   }

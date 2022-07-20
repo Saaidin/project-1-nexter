@@ -110,8 +110,12 @@
   
   @media only screen and (min-width: $bp-largest) {
     display: none;
-  }
-
+  } 
+  
+  @media only screen and (max-width: $bp-largest) {
+    display: none;
+  } 
+  
   @media only screen and (max-width: $bp-large) {
     display: none; 
   }  
@@ -146,7 +150,7 @@
 }
 
 .mobile-nav.is-active {
-  display: contents;  
+  display: contents;   
   
   @media only screen and (max-width: $bp-large) {
     display: grid;
