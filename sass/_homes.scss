@@ -23,14 +23,51 @@
   }
   
   &__like {
+    
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6 {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
-      fill: $color-primary;
       height: 2.5rem;
       width: 2.5rem;
       z-index: 2;
       justify-self: end;
-      margin: 1rem;
+      margin-right: 3rem;
+      
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+           
+      &--heart-1,
+      &--heart-2,
+      &--heart-3,
+      &--heart-4,
+      &--heart-5,
+      &--heart-6 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        z-index: 1;
+                
+      }
+      
+      &--checkbox-1,
+      &--checkbox-2,
+      &--checkbox-3,
+      &--checkbox-4,
+      &--checkbox-5,
+      &--checkbox-6 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        z-index: 2;
+        opacity: 0.001; 
+               
+      }
+    }
+    
   }
   
   &__name {
@@ -84,3 +121,4 @@
     grid-column: 1 / -1;
   }
 }
+
